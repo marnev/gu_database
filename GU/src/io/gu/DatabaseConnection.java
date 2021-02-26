@@ -16,9 +16,8 @@ public class DatabaseConnection {
 			
 			Class.forName("org.postgresql.Driver");
 			conn = DriverManager.getConnection("yourDatabase", "yourUsername", "yourPassword");
-
+			
 			this.stmt = conn.createStatement();
-			//System.out.println(sql);
 			stmt.execute(sql);
 			
 			//conn.commit();
